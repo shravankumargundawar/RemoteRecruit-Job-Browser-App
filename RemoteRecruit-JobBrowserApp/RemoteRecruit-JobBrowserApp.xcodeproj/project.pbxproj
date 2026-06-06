@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		08B733E92FD43A98000C6040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08B733CE2FD43A97000C6040 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08B733D52FD43A97000C6040;
+			remoteInfo = "RemoteRecruit-JobBrowserApp";
+		};
+		08B733F32FD43A98000C6040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08B733CE2FD43A97000C6040 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08B733D52FD43A97000C6040;
+			remoteInfo = "RemoteRecruit-JobBrowserApp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08B733D62FD43A97000C6040 /* RemoteRecruit-JobBrowserApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RemoteRecruit-JobBrowserApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08B733E82FD43A98000C6040 /* RemoteRecruit-JobBrowserAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RemoteRecruit-JobBrowserAppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08B733F22FD43A98000C6040 /* RemoteRecruit-JobBrowserAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RemoteRecruit-JobBrowserAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		08B733D82FD43A97000C6040 /* RemoteRecruit-JobBrowserApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "RemoteRecruit-JobBrowserApp";
+			sourceTree = "<group>";
+		};
+		08B733EB2FD43A98000C6040 /* RemoteRecruit-JobBrowserAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "RemoteRecruit-JobBrowserAppTests";
+			sourceTree = "<group>";
+		};
+		08B733F52FD43A98000C6040 /* RemoteRecruit-JobBrowserAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "RemoteRecruit-JobBrowserAppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08B733D32FD43A97000C6040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08B733E52FD43A98000C6040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08B733EF2FD43A98000C6040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08B733CD2FD43A97000C6040 = {
+			isa = PBXGroup;
+			children = (
+				08B733D82FD43A97000C6040 /* RemoteRecruit-JobBrowserApp */,
+				08B733EB2FD43A98000C6040 /* RemoteRecruit-JobBrowserAppTests */,
+				08B733F52FD43A98000C6040 /* RemoteRecruit-JobBrowserAppUITests */,
+				08B733D72FD43A97000C6040 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08B733D72FD43A97000C6040 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08B733D62FD43A97000C6040 /* RemoteRecruit-JobBrowserApp.app */,
+				08B733E82FD43A98000C6040 /* RemoteRecruit-JobBrowserAppTests.xctest */,
+				08B733F22FD43A98000C6040 /* RemoteRecruit-JobBrowserAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08B733D52FD43A97000C6040 /* RemoteRecruit-JobBrowserApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08B733FC2FD43A98000C6040 /* Build configuration list for PBXNativeTarget "RemoteRecruit-JobBrowserApp" */;
+			buildPhases = (
+				08B733D22FD43A97000C6040 /* Sources */,
+				08B733D32FD43A97000C6040 /* Frameworks */,
+				08B733D42FD43A97000C6040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				08B733D82FD43A97000C6040 /* RemoteRecruit-JobBrowserApp */,
+			);
+			name = "RemoteRecruit-JobBrowserApp";
+			packageProductDependencies = (
+			);
+			productName = "RemoteRecruit-JobBrowserApp";
+			productReference = 08B733D62FD43A97000C6040 /* RemoteRecruit-JobBrowserApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08B733E72FD43A98000C6040 /* RemoteRecruit-JobBrowserAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08B733FF2FD43A98000C6040 /* Build configuration list for PBXNativeTarget "RemoteRecruit-JobBrowserAppTests" */;
+			buildPhases = (
+				08B733E42FD43A98000C6040 /* Sources */,
+				08B733E52FD43A98000C6040 /* Frameworks */,
+				08B733E62FD43A98000C6040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08B733EA2FD43A98000C6040 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				08B733EB2FD43A98000C6040 /* RemoteRecruit-JobBrowserAppTests */,
+			);
+			name = "RemoteRecruit-JobBrowserAppTests";
+			packageProductDependencies = (
+			);
+			productName = "RemoteRecruit-JobBrowserAppTests";
+			productReference = 08B733E82FD43A98000C6040 /* RemoteRecruit-JobBrowserAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		08B733F12FD43A98000C6040 /* RemoteRecruit-JobBrowserAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08B734022FD43A98000C6040 /* Build configuration list for PBXNativeTarget "RemoteRecruit-JobBrowserAppUITests" */;
+			buildPhases = (
+				08B733EE2FD43A98000C6040 /* Sources */,
+				08B733EF2FD43A98000C6040 /* Frameworks */,
+				08B733F02FD43A98000C6040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08B733F42FD43A98000C6040 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				08B733F52FD43A98000C6040 /* RemoteRecruit-JobBrowserAppUITests */,
+			);
+			name = "RemoteRecruit-JobBrowserAppUITests";
+			packageProductDependencies = (
+			);
+			productName = "RemoteRecruit-JobBrowserAppUITests";
+			productReference = 08B733F22FD43A98000C6040 /* RemoteRecruit-JobBrowserAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08B733CE2FD43A97000C6040 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					08B733D52FD43A97000C6040 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					08B733E72FD43A98000C6040 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 08B733D52FD43A97000C6040;
+					};
+					08B733F12FD43A98000C6040 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 08B733D52FD43A97000C6040;
+					};
+				};
+			};
+			buildConfigurationList = 08B733D12FD43A97000C6040 /* Build configuration list for PBXProject "RemoteRecruit-JobBrowserApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08B733CD2FD43A97000C6040;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 08B733D72FD43A97000C6040 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08B733D52FD43A97000C6040 /* RemoteRecruit-JobBrowserApp */,
+				08B733E72FD43A98000C6040 /* RemoteRecruit-JobBrowserAppTests */,
+				08B733F12FD43A98000C6040 /* RemoteRecruit-JobBrowserAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08B733D42FD43A97000C6040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08B733E62FD43A98000C6040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08B733F02FD43A98000C6040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08B733D22FD43A97000C6040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08B733E42FD43A98000C6040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08B733EE2FD43A98000C6040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08B733EA2FD43A98000C6040 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08B733D52FD43A97000C6040 /* RemoteRecruit-JobBrowserApp */;
+			targetProxy = 08B733E92FD43A98000C6040 /* PBXContainerItemProxy */;
+		};
+		08B733F42FD43A98000C6040 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08B733D52FD43A97000C6040 /* RemoteRecruit-JobBrowserApp */;
+			targetProxy = 08B733F32FD43A98000C6040 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08B733FA2FD43A98000C6040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08B733FB2FD43A98000C6040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08B733FD2FD43A98000C6040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TechieShravan.RemoteRecruit-JobBrowserApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08B733FE2FD43A98000C6040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TechieShravan.RemoteRecruit-JobBrowserApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		08B734002FD43A98000C6040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TechieShravan.RemoteRecruit-JobBrowserAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemoteRecruit-JobBrowserApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RemoteRecruit-JobBrowserApp";
+			};
+			name = Debug;
+		};
+		08B734012FD43A98000C6040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TechieShravan.RemoteRecruit-JobBrowserAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemoteRecruit-JobBrowserApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RemoteRecruit-JobBrowserApp";
+			};
+			name = Release;
+		};
+		08B734032FD43A98000C6040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TechieShravan.RemoteRecruit-JobBrowserAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RemoteRecruit-JobBrowserApp";
+			};
+			name = Debug;
+		};
+		08B734042FD43A98000C6040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TechieShravan.RemoteRecruit-JobBrowserAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RemoteRecruit-JobBrowserApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08B733D12FD43A97000C6040 /* Build configuration list for PBXProject "RemoteRecruit-JobBrowserApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08B733FA2FD43A98000C6040 /* Debug */,
+				08B733FB2FD43A98000C6040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08B733FC2FD43A98000C6040 /* Build configuration list for PBXNativeTarget "RemoteRecruit-JobBrowserApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08B733FD2FD43A98000C6040 /* Debug */,
+				08B733FE2FD43A98000C6040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08B733FF2FD43A98000C6040 /* Build configuration list for PBXNativeTarget "RemoteRecruit-JobBrowserAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08B734002FD43A98000C6040 /* Debug */,
+				08B734012FD43A98000C6040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08B734022FD43A98000C6040 /* Build configuration list for PBXNativeTarget "RemoteRecruit-JobBrowserAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08B734032FD43A98000C6040 /* Debug */,
+				08B734042FD43A98000C6040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08B733CE2FD43A97000C6040 /* Project object */;
+}
