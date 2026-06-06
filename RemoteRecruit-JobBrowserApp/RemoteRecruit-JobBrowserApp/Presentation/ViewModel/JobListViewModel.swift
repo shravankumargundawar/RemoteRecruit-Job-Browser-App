@@ -10,7 +10,7 @@ import Foundation
 
 @MainActor final class JobListViewModel: JobListViewModelProtocol, ObservableObject {
     @Published var searchText = ""
-    @Published private(set) var state: ViewState<[JobResponseModel]> = .idle
+    @Published var state: ViewState<[JobResponseModel]> = .idle
     private let repository: JobRepositoryProtocol
     private var cancellables = Set<AnyCancellable>()
     
@@ -20,11 +20,14 @@ import Foundation
     private var isLoading = false
     private var hasMore = true
 
-    init(
-        repository: JobRepositoryProtocol
-    ) {
+    init(repository: JobRepositoryProtocol) {
         self.repository = repository
         bindSearch()
+    }
+    
+    func loadInitial() async {
+        guard case .idle = state else { return }
+        await loadJobs()
     }
     
     func loadJobs() async -> [JobResponseModel] {
