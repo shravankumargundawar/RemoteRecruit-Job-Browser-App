@@ -76,14 +76,13 @@ import Foundation
         isLoading = true
 
         do {
+            offset += allJobs.count
+            hasMore = allJobs.count == pageSize
             let next = try await repository.fetchJobs(
                 limit: pageSize,
                 offset: offset
             )
-
-            offset += next.count
-            hasMore = next.count == pageSize
-
+            
             allJobs.append(contentsOf: next)
             applySearch()
 
