@@ -1,0 +1,2 @@
+import Foundation
+final class MockJobRepository: JobRepositoryProtocol { var jobs:[Job]=[]; func fetchJobs() async throws -> [Job] { jobs }; func searchJobs(keyword:String) async throws -> [Job] { jobs } }

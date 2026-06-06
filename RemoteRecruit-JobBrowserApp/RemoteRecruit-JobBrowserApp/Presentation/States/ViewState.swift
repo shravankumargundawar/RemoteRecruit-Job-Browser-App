@@ -1,0 +1,1 @@
+enum ViewState<T>{case idle,loading,success(T),empty,error(String)}
