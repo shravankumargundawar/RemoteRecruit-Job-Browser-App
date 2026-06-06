@@ -1,34 +1,26 @@
-import SwiftUI
+//
+//  JobListView.swift
+//  RemoteRecruit-JobBrowserApp
+//
+//  Created by Shravan Gundawar on 06/06/26.
+//
 
-//struct JobListView: View {
-//    @StateObject var viewModel: JobListViewModel
-//    var body: some View {
-//        NavigationStack { Text("Jobs") }
-//            .task {
-//                let jobs = await viewModel.loadJobs()
-//                print(jobs)
-//            }
-//    }
-//}
+import SwiftUI
 
 struct JobListView: View {
 
     @StateObject private var viewModel: JobListViewModel
 
-    init(
-        viewModel: JobListViewModel
-    ) {
+    init(viewModel: JobListViewModel) {
         _viewModel = StateObject(
             wrappedValue: viewModel
         )
     }
 
     var body: some View {
-
         NavigationStack {
 
             VStack(spacing: 16) {
-
                 JobSearchBar(
                     text: $viewModel.searchText
                 )
@@ -107,7 +99,7 @@ private extension JobListView {
                         let job = jobs[index]
 
                         NavigationLink {
-                            JobDescriptionView(job: job)
+                            JobDetailsView(job: job)
                         } label: {
                             JobCardView(job: job)
                                 .tint(.primary) // or .foregroundStyle(.primary) on inner text
@@ -131,7 +123,7 @@ import SwiftUI
 
 struct JobCardView: View {
 
-    let job: Job
+    let job: JobResponseModel
 
     var body: some View {
 
@@ -204,29 +196,6 @@ struct JobCardView: View {
 }
 
 #Preview {
-    JobCardView(job: Job(title: "iOS Developer", companySlug: "", location: "USA", minSalary: 50000, maxSalary: 100000, description: "You will work behind the scenes to ensure our members' caregiving needs are met seamlessly. You will report directly to a Care Manager.</p><h3>What You Will Do</h3><p>Conduct research, complete tasks, and deliver high-quality results for our members. Execute a variety of care-related tasks to support Care Coordinators in delivering a high-quality member experience.", companyInfo: "NA", employmentType: "Full Time"))
-}
-
-struct JobSearchBar: View {
-
-    @Binding var text: String
-
-    var body: some View {
-
-        HStack(spacing: 10) {
-
-            Image(systemName: "magnifyingglass")
-                .foregroundColor(.gray)
-
-            TextField(
-                "Search jobs, companies...",
-                text: $text
-            )
-        }
-        .padding(.horizontal, 14)
-        .frame(height: 50)
-        .background(Color(.systemGray6))
-        .cornerRadius(14)
-    }
+    JobCardView(job: JobResponseModel(title: "iOS Developer", companySlug: "", location: "USA", minSalary: 50000, maxSalary: 100000, description: "You will work behind the scenes to ensure our members' caregiving needs are met seamlessly. You will report directly to a Care Manager.</p><h3>What You Will Do</h3><p>Conduct research, complete tasks, and deliver high-quality results for our members. Execute a variety of care-related tasks to support Care Coordinators in delivering a high-quality member experience.", companyInfo: "NA", employmentType: "Full Time"))
 }
 

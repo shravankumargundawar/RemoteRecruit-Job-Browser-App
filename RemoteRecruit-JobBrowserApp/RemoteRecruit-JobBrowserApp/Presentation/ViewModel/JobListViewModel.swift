@@ -1,9 +1,16 @@
+//
+//  JobListViewModel.swift
+//  RemoteRecruit-JobBrowserApp
+//
+//  Created by Shravan Gundawar on 06/06/26.
+//
+
 import Combine
 import Foundation
 
-@MainActor final class JobListViewModel: ObservableObject {
+@MainActor final class JobListViewModel: JobListViewModelProtocol, ObservableObject {
     @Published var searchText = ""
-    @Published private(set) var state: ViewState<[Job]> = .idle
+    @Published private(set) var state: ViewState<[JobResponseModel]> = .idle
     private let repository: JobRepositoryProtocol
     private var cancellables = Set<AnyCancellable>()
     
@@ -20,7 +27,7 @@ import Foundation
         bindSearch()
     }
     
-    func loadJobs() async -> [Job] {
+    func loadJobs() async -> [JobResponseModel] {
         guard !isLoading else { return [] }
         isLoading = true
         offset = 0
@@ -40,7 +47,7 @@ import Foundation
         }
     }
     
-    func loadMoreIfNeeded(currentItem item: Job?) async {
+    func loadMoreIfNeeded(currentItem item: JobResponseModel?) async {
         guard hasMore, !isLoading else { return }
         guard case let .success(items) = state else { return }
         guard let item = item, items.last == item else { return }

@@ -1,5 +1,5 @@
 //
-//  JobDTO.swift
+//  Job.swift
 //  RemoteRecruit-JobBrowserApp
 //
 //  Created by Shravan Gundawar on 06/06/26.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct JobDTO: Decodable {
+struct JobResponseModel: Equatable {
     let title: String?
     let companySlug: String?
     let location: String?

@@ -1,3 +1,10 @@
+//
+//  AppContainer.swift
+//  RemoteRecruit-JobBrowserApp
+//
+//  Created by Shravan Gundawar on 06/06/26.
+//
+
 import Foundation
 
 final class AppContainer {
@@ -6,6 +13,7 @@ final class AppContainer {
         apiClient: apiClient
     )
     lazy var repository: JobRepositoryProtocol = JobRepository(service: service)
+    
     func makeJobListViewModel() -> JobListViewModel {
         JobListViewModel(repository: repository)
     }

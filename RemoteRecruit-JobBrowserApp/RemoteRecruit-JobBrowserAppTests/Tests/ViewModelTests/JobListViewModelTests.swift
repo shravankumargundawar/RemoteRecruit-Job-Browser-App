@@ -1,3 +1,3 @@
 import XCTest
-@testable import RemoteRecruit
+@testable import RemoteRecruit_JobBrowserApp
 final class JobListViewModelTests: XCTestCase {}

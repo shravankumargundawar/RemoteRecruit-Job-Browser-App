@@ -1,10 +1,19 @@
+//
+//  JobDetailsView.swift
+//  RemoteRecruit-JobBrowserApp
+//
+//  Created by Shravan Gundawar on 06/06/26.
+//
+
+
 import SwiftUI
 import MapKit
 
-struct JobDescriptionView: View {
+struct JobDetailsView: View {
 
-    let job: Job
+    let job: JobResponseModel
 
+    //NOTE: Static for now, data not available in API response
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(
             latitude: 37.7749,
@@ -19,11 +28,9 @@ struct JobDescriptionView: View {
     var body: some View {
 
         ScrollView(showsIndicators: false) {
-
             VStack(spacing: 0) {
 
                 // MARK: Header
-
                 VStack(spacing: 12) {
                     RoundedRectangle(cornerRadius: 18)
                         .fill(.white)
@@ -83,21 +90,17 @@ struct JobDescriptionView: View {
                     alignment: .leading,
                     spacing: 24
                 ) {
-
                     // Description
-
                     sectionTitle("Job Description")
 
                     Text((job.description ?? "NA").strippingHTML())
                         .font(.body)
 
                     // Salary
-
                     VStack(
                         alignment: .leading,
                         spacing: 8
                     ) {
-
                         sectionTitle("Salary Range")
 
                         if let minSalary = job.minSalary,
@@ -111,7 +114,6 @@ struct JobDescriptionView: View {
                     }
 
                     // Location
-
                     VStack(
                         alignment: .leading,
                         spacing: 12
@@ -216,36 +218,14 @@ private struct JobLocation: Identifiable {
     let coordinate: CLLocationCoordinate2D
 }
 
-private extension String {
-    func strippingHTML() -> String {
-        // Try modern AttributedString first
-        if let data = self.data(using: .utf8),
-           let attributed = try? NSAttributedString(
-               data: data,
-               options: [
-                   .documentType: NSAttributedString.DocumentType.html,
-                   .characterEncoding: String.Encoding.utf8.rawValue
-               ],
-               documentAttributes: nil
-           ) {
-            return attributed.string
-        }
-        // Fallback: simple tag removal
-        return self.replacingOccurrences(of: "<[^>]+>", with: " ", options: .regularExpression)
-            .replacingOccurrences(of: "&nbsp;", with: " ")
-            .replacingOccurrences(of: "&amp;", with: "&")
-            .replacingOccurrences(of: "&quot;", with: "\"")
-            .replacingOccurrences(of: "&#39;", with: "'")
-            .replacingOccurrences(of: "&lt;", with: "<")
-            .replacingOccurrences(of: "&gt;", with: ">")
-            .trimmingCharacters(in: .whitespacesAndNewlines)
-    }
-}
+
+
+//MARK: Preview
 
 #Preview {
 
     NavigationStack {
 
-        JobDescriptionView(job: Job(title: "iOS Developer", companySlug: "", location: "USA", minSalary: 50000, maxSalary: 100000, description: "You will work behind the scenes to ensure our members' caregiving needs are met seamlessly. You will report directly to a Care Manager.</p><h3>What You Will Do</h3><p>Conduct research, complete tasks, and deliver high-quality results for our members. Execute a variety of care-related tasks to support Care Coordinators in delivering a high-quality member experience.", companyInfo: "NA", employmentType: "Full Time"))
+        JobDetailsView(job: JobResponseModel(title: "iOS Developer", companySlug: "", location: "USA", minSalary: 50000, maxSalary: 100000, description: "You will work behind the scenes to ensure our members' caregiving needs are met seamlessly. You will report directly to a Care Manager.</p><h3>What You Will Do</h3><p>Conduct research, complete tasks, and deliver high-quality results for our members. Execute a variety of care-related tasks to support Care Coordinators in delivering a high-quality member experience.", companyInfo: "NA", employmentType: "Full Time"))
     }
 }
