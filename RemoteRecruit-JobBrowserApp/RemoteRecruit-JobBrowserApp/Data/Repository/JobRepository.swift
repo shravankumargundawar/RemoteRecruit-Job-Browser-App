@@ -12,6 +12,9 @@ final class JobRepository: JobRepositoryProtocol {
             $0.toDomain()
         }
     }
+    func fetchJobs(limit: Int, offset: Int) async throws -> [Job] {
+        try await service.fetchJobs(limit: limit, offset: offset).map { $0.toDomain() }
+    }
     func searchJobs(
         keyword: String
     ) async throws -> [Job] {

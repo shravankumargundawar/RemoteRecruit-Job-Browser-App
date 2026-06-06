@@ -112,6 +112,11 @@ private extension JobListView {
                             JobCardView(job: job)
                                 .tint(.primary) // or .foregroundStyle(.primary) on inner text
                         }
+                        .onAppear {
+                            if index == jobs.count - 1 {
+                                Task { await viewModel.loadMoreIfNeeded(currentItem: job) }
+                            }
+                        }
                     }
                 }
                 .padding(.horizontal)

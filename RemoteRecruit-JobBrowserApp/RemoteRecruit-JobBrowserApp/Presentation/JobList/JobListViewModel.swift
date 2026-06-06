@@ -6,30 +6,58 @@ import Foundation
     @Published private(set) var state: ViewState<[Job]> = .idle
     private let repository: JobRepositoryProtocol
     private var cancellables = Set<AnyCancellable>()
+    
+    // Pagination state
+    private let pageSize = 20
+    private var offset = 0
+    private var isLoading = false
+    private var hasMore = true
+
     init(
         repository: JobRepositoryProtocol
     ) {
         self.repository = repository
         bindSearch()
     }
+    
     func loadJobs() async -> [Job] {
+        guard !isLoading else { return [] }
+        isLoading = true
+        offset = 0
+        hasMore = true
         state = .loading
         do {
-            let jobs = try await repository.fetchJobs()
-            state =
-                jobs.isEmpty
-                ? .empty
-                : .success(
-                    jobs
-                )
+            let jobs = try await repository.fetchJobs(limit: pageSize, offset: offset)
+            offset += jobs.count
+            hasMore = jobs.count == pageSize
+            state = jobs.isEmpty ? .empty : .success(jobs)
+            isLoading = false
             return jobs
         } catch {
-            state = .error(
-                error.localizedDescription
-            )
+            state = .error(error.localizedDescription)
+            isLoading = false
+            return []
         }
-        return []
     }
+    
+    func loadMoreIfNeeded(currentItem item: Job?) async {
+        guard hasMore, !isLoading else { return }
+        guard case let .success(items) = state else { return }
+        guard let item = item, items.last == item else { return }
+        isLoading = true
+        do {
+            let next = try await repository.fetchJobs(limit: pageSize, offset: offset)
+            offset += next.count
+            hasMore = next.count == pageSize
+            let updated = items + next
+            state = .success(updated)
+            isLoading = false
+        } catch {
+            // Keep old items and surface error state if needed; here we keep items to avoid clearing UI
+            isLoading = false
+        }
+    }
+    
     private func bindSearch() {
         $searchText.debounce(
             for: .milliseconds(

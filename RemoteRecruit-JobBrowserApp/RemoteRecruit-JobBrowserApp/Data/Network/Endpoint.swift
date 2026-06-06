@@ -2,7 +2,20 @@ import Foundation
 
 enum Endpoint {
     case jobs(limit: Int, offset: Int)
+
     var url: URL {
-        URL(string: "https://himalayas.app/jobs/api?limit=20&offset=0")!
+        switch self {
+        case let .jobs(limit, offset):
+            var components = URLComponents()
+            components.scheme = "https"
+            components.host = "himalayas.app"
+            components.path = "/jobs/api"
+            components.queryItems = [
+                URLQueryItem(name: "limit", value: String(limit)),
+                URLQueryItem(name: "offset", value: String(offset))
+            ]
+            // Force unwrap is safe here in controlled construction; if it fails, it's a programmer error.
+            return components.url!
+        }
     }
 }
