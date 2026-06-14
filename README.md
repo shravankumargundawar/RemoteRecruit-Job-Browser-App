@@ -320,6 +320,15 @@ Potential enhancements include:
 
 Developed as part of an iOS Engineering assessment focused on modern iOS architecture, clean code practices, and test-driven development.
 
+## Working App Screens
 
 <img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 - 2026-06-14 at 15 27 29" src="https://github.com/user-attachments/assets/c6919753-034c-450e-96b5-d0d5587cfd86" />
+
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 - 2026-06-14 at 15 26 33" src="https://github.com/user-attachments/assets/a1cd846b-ecc6-4d71-81ec-fb6ed79e82aa" />
+
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 - 2026-06-14 at 15 25 58" src="https://github.com/user-attachments/assets/6c75c772-0638-4602-97f0-f12f8ce22137" />
+
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 - 2026-06-14 at 15 25 32" src="https://github.com/user-attachments/assets/67368c10-d1ed-4349-b4bc-13336c504e41" />
+
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 - 2026-06-14 at 15 25 37" src="https://github.com/user-attachments/assets/8d7b6ad4-6099-48c4-8d6f-321c0dfe3963" />
 
