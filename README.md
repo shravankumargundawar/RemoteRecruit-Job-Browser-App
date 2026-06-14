@@ -319,3 +319,7 @@ Potential enhancements include:
 ## Author
 
 Developed as part of an iOS Engineering assessment focused on modern iOS architecture, clean code practices, and test-driven development.
+
+
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 - 2026-06-14 at 15 27 29" src="https://github.com/user-attachments/assets/c6919753-034c-450e-96b5-d0d5587cfd86" />
+
