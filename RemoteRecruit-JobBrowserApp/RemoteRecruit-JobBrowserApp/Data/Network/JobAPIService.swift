@@ -22,6 +22,6 @@ final class JobAPIService: JobAPIServiceProtocol {
         let r: JobsResponseDTO = try await apiClient.request(
             url: Endpoint.jobs(limit: limit, offset: offset).url
         )
-        return r.jobs
+        return r.jobs ?? []
     }
 }
